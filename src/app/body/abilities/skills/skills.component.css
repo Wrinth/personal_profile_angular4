@@ -1,0 +1,26 @@
+ul > li {
+  min-height: 30px;
+  padding: 3px 0px;
+}
+
+ul > li .ability-title {
+  display: inline-block;
+  width: 60%;
+}
+
+ul > li .ability-score {
+  float: right;
+}
+
+ul > li .ability-score .glyphicon.filled {
+  color: #22A39F;
+}
+
+ul > li .ability-score .glyphicon {
+  color: #DFE0E0;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}

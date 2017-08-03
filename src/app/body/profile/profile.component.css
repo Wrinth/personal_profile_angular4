@@ -1,0 +1,20 @@
+#profile {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #727878;
+}
+
+#profile .row > div {
+  margin-bottom: 20px;
+}

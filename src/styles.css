@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #434242;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+  background: url(http://www.neatprogramme.org.uk/wp-content/uploads/2015/09/featured45@wdd2x.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 54px;
+  text-align: center;
+}
+h3 {
+  font-size: 28px;
+}
+
+h2, h3 {
+  font-weight: 300;
+  color: #22A39F;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+  font-family: 'Open Sans', sans-serif !important;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin: 40px 0px;
+  border-color: #727878;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
