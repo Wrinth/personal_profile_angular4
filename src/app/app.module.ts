@@ -21,6 +21,7 @@ import { LanguagesComponent } from './body/abilities/languages/languages.compone
 import { ToolsComponent } from './body/abilities/tools/tools.component';
 import { ProjestListComponent } from './body/projects/projest-list/projest-list.component';
 import { ProjestItemComponent } from './body/projects/projest-list/projest-item/projest-item.component';
+import { SocialAccountsComponent } from './body/contact/social-accounts/social-accounts.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ProjestItemComponent } from './body/projects/projest-list/projest-item/
     LanguagesComponent,
     ToolsComponent,
     ProjestListComponent,
-    ProjestItemComponent
+    ProjestItemComponent,
+    SocialAccountsComponent
   ],
   imports: [
     BrowserModule

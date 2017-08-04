@@ -1,19 +1,11 @@
-.row > div {
-  margin-bottom: 30px;
-}
-
 figure {
   position: relative;
   overflow: hidden;
 }
 
-figure.effect {
-  background: #22A39F;
-  color: #FFF;
-}
-
 figure img {
   width: 110%;
+  opacity: 1;
 }
 
 figure figcaption {
@@ -23,6 +15,17 @@ figure figcaption {
   left: 0px;
   height: 100%;
   width: 100%;
+  background-color: #22A39F;
+  opacity: 0.9;
+  display: none;
+}
+
+figure:hover figcaption {
+  display: block;
+}
+
+figure:hover img {
+  opacity: 0.5;
 }
 
 figure p > strong {
@@ -31,26 +34,42 @@ figure p > strong {
   margin: 0px;
 }
 
-#projects figure h3 {
+figure h3 {
   color: #FFF;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-figure.effect h3 {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 20px;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+figure p > strong {
+  width: 60px;
+  display: inline-block;
+  margin: 0px;
 }
 
-figure.effect p {
-  padding-top: 10px;
+figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+figure .icon {
+  background: #22A39F;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+figure .icon span {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 15px;
 }

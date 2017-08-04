@@ -5,3 +5,12 @@
   margin: 0;
   padding: 0;
 }
+
+.title {
+  color: #FFFFFF;
+}
+
+.subtitle {
+  text-align: center;
+  color: #727878;
+}

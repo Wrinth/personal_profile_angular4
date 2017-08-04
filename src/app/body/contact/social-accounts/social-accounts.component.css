@@ -1,0 +1,8 @@
+.row * {
+  color: #FFFFFF;
+}
+
+#contact a .icon {
+  float: left;
+  margin-right: 20px;
+}
