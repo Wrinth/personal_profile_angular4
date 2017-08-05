@@ -7,7 +7,7 @@ export class UserExperiencesService {
     educations: [
       {
         schoolName: "[Your University's name here]",
-        startdate: "[Srart Month Year]",
+        startDate: "[Srart Month Year]",
         endDate: "[End Month Year]",
         degreeTitle: "[Degree Title here]",
         certificationDescription: "[Certification Description here.]",
@@ -15,7 +15,7 @@ export class UserExperiencesService {
       },
       {
         schoolName: "[Your High School's name here]",
-        startdate: "[Srart Month Year]",
+        startDate: "[Srart Month Year]",
         endDate: "[End Month Year]",
         degreeTitle: "[Certification Description here.]",
         certificationDescription: "[Certification Description here.]",

@@ -1,6 +1,7 @@
 figure {
   position: relative;
   overflow: hidden;
+  margin: 3%;
 }
 
 figure img {
