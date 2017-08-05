@@ -22,6 +22,8 @@ import { ToolsComponent } from './body/abilities/tools/tools.component';
 import { ProjestListComponent } from './body/projects/projest-list/projest-list.component';
 import { ProjestItemComponent } from './body/projects/projest-list/projest-item/projest-item.component';
 import { SocialAccountsComponent } from './body/contact/social-accounts/social-accounts.component';
+import {UserService} from "./user.service";
+import {PageService} from "./page.service";
 
 @NgModule({
   declarations: [
@@ -50,7 +52,7 @@ import { SocialAccountsComponent } from './body/contact/social-accounts/social-a
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [UserService, PageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

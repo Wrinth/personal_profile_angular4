@@ -1,0 +1,11 @@
+#body {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(http://www.neatprogramme.org.uk/wp-content/uploads/2015/09/featured45@wdd2x.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

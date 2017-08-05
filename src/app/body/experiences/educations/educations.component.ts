@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {UserExperiencesService} from "../user-experiences.service";
 
 @Component({
   selector: 'app-educations',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./educations.component.css']
 })
 export class EducationsComponent implements OnInit {
+  private userExperiencesInfo;
 
-  constructor() { }
+  constructor(private userExperiencesService: UserExperiencesService) { }
 
   ngOnInit() {
+    this.userExperiencesInfo = this.userExperiencesService.getExperiencesInfo();
   }
 
 }

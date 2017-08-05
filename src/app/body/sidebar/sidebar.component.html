@@ -12,12 +12,12 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="navbar-collapse navbar-ex1-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class=""><a href="#profile">Profile</a></li>
-      <li class=""><a href="#experiences">Experiences</a></li>
-      <li class=""><a href="#abilities">Abilities</a></li>
-      <li class=""><a href="#projects">Projects</a></li>
-      <!--<li class=""><a href="#awards">Awards</a></li>-->
-      <li class=""><a href="#contact">Contact</a></li>
+      <li class="" *ngIf="pageInfo['showProfile']"><a href="#profile">Profile</a></li>
+      <li class="" *ngIf="pageInfo['showExperiences']"><a href="#experiences">Experiences</a></li>
+      <li class="" *ngIf="pageInfo['showAbilities']"><a href="#abilities">Abilities</a></li>
+      <li class="" *ngIf="pageInfo['showProjects']"><a href="#projects">Projects</a></li>
+      <li class="" *ngIf="pageInfo['showAwards']"><a href="#awards">Awards</a></li>
+      <li class="" *ngIf="pageInfo['showContact']"><a href="#contact">Contact</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>

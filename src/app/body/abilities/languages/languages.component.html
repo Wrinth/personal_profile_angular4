@@ -1,39 +1,29 @@
-<h3>Language</h3>
+<h3>Languages</h3>
 <div class="row">
   <div class="col-md-6">
     <ul class="no-bullets">
-      <li>
-        <span class="ability-title">[Example Language] ([Level])</span>
+      <li *ngFor="let language of languagesList1">
+        <span class="ability-title">{{ language['languageName'] }} ({{ language['level'] }})</span>
         <span class="ability-score">
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-				</span>
-      </li>
-      <li>
-        <span class="ability-title">English (Daily use)</span>
-        <span class="ability-score">
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
+					<span [ngClass]="language['proficiency'] >= 1 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 2 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 3 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 4 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 5 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
 				</span>
       </li>
     </ul>
   </div>
   <div class="col-md-6">
     <ul class="no-bullets">
-      <li>
-        <span class="ability-title">Spanish (Survivable)</span>
+      <li *ngFor="let language of languagesList2">
+        <span class="ability-title">{{ language['languageName'] }} ({{ language['level'] }})</span>
         <span class="ability-score">
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star filled"></span>
-					<span class="glyphicon glyphicon-star "></span>
-					<span class="glyphicon glyphicon-star "></span>
-					<span class="glyphicon glyphicon-star "></span>
+					<span [ngClass]="language['proficiency'] >= 1 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 2 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 3 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 4 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
+					<span [ngClass]="language['proficiency'] >= 5 ? 'glyphicon glyphicon-star filled': 'glyphicon glyphicon-star'"></span>
 				</span>
       </li>
     </ul>

@@ -1,10 +1,10 @@
 <div id="body">
   <app-sidebar></app-sidebar>
   <!-- List of user's informations -->
-  <app-profile></app-profile>
-  <app-experiences></app-experiences>
-  <app-abilities></app-abilities>
-  <app-projects></app-projects>
-  <!--<app-awards></app-awards>-->
-  <app-contact></app-contact>
+  <app-profile *ngIf="pageInfo['showProfile']"></app-profile>
+  <app-experiences *ngIf="pageInfo['showExperiences']"></app-experiences>
+  <app-abilities *ngIf="pageInfo['showAbilities']"></app-abilities>
+  <app-projects *ngIf="pageInfo['showProjects']"></app-projects>
+  <app-awards *ngIf="pageInfo['showAwards']"></app-awards>
+  <app-contact *ngIf="pageInfo['showContact']"></app-contact>
 </div>

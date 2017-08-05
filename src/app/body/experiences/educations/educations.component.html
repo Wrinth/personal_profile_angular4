@@ -1,43 +1,23 @@
 <h3>Education</h3>
 <div class="experiences">
 
-  <div class="experience row">
+  <div class="experience row" *ngFor="let education of userExperiencesInfo['educations']">
     <div class="col-md-4">
-      <h4>[Your University's name here]</h4>
+      <h4>{{ education['schoolName'] }}</h4>
       <p class="experience-period">
-        [Srart Month Year]				-
-        [End Month Year]			</p>
+        {{ education['startdate'] }}				-
+        {{ education['enddate'] }}			</p>
     </div>
     <div class="col-md-8">
       <p>
-        <strong>[Degree Title here]</strong>
+        <strong>{{ education['degreeTitle'] }}</strong>
         <span class="hidden-phone">
-					[Certification Description here.]</span>
+					{{ education['certificationDescription'] }}</span>
+        <br>
         <span class="experience-details">
 					<span class="location">
 						<span class="glyphicon glyphicon-map-marker"></span>
-						[Location here]</span>
-				</span>
-      </p>
-    </div>
-  </div>
-
-  <div class="experience row">
-    <div class="col-md-4">
-      <h4>[Your High School's name here]</h4>
-      <p class="experience-period">
-        [Srart Month Year]				-
-        [End Month Year]			</p>
-    </div>
-    <div class="col-md-8">
-      <p>
-        <strong>[Certification Description here.]</strong>
-        <span class="hidden-phone">
-					[Certification Description here.]</span>
-        <span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						[Location here]</span>
+						{{ education['location'] }}</span>
 				</span>
       </p>
     </div>

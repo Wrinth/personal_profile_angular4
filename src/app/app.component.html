@@ -1,2 +1,4 @@
-<app-header></app-header>
-<app-body></app-body>
+<div id="body">
+  <app-header *ngIf="pageInfo['showHeader']"></app-header>
+  <app-body></app-body>
+</div>

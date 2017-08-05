@@ -1,26 +1,27 @@
 <h3>Careers</h3>
 <div class="experiences">
 
-  <div class="experience row">
+  <div class="experience row" *ngFor="let career of userExperiencesInfo['careers']">
     <div class="col-md-4">
-      <h4>[Company's name here]</h4>
+      <h4>{{ career['companyName'] }}</h4>
       <p class="experience-period">
-        [Srart Month Year]				-
-        [End Month Year]			</p>
+        {{ career['startDate'] }}				-
+        {{ career['endDate'] }}			</p>
     </div>
     <div class="col-md-8">
       <p>
-        <strong>[Job type] - [Your job's title here]</strong>
+        <strong>{{ career['jobType'] }} - {{ career['jobTitle'] }}]</strong>
         <span class="hidden-phone">
-					 [Your job's duty here]</span>
+					 {{ career['jobDuty'] }}</span>
+        <br>
         <span class="experience-details">
 					<span class="location">
 						<span class="glyphicon glyphicon-map-marker"></span>
-						[Location]</span>
+						{{ career['location'] }}</span>
 					<span class="seperator">|</span>
 					<span class="link">
 						<span class="glyphicon glyphicon-link"></span>
-						<a href="#" target="_blank">[Company's website]</a>
+						<a [href]="career['companyLink']" target="_blank">Company's website</a>
 					</span>
 				</span>
       </p>
