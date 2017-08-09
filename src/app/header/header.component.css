@@ -8,6 +8,19 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:rgba(255,255,255,0.2);
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 .scroll-down {

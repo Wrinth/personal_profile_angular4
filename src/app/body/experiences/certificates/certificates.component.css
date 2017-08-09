@@ -1,0 +1,13 @@
+.certificate {
+  display:inline-block;
+  overflow:hidden;
+}
+.certificate img {
+  width: 100%;
+  height: 100%;
+}
+
+.certifica_title {
+  color: black;
+  text-align: center;
+}

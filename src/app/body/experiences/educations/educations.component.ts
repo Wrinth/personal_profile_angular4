@@ -7,12 +7,12 @@ import {UserExperiencesService} from "../user-experiences.service";
   styleUrls: ['./educations.component.css']
 })
 export class EducationsComponent implements OnInit {
-  private userExperiencesInfo;
+  private userEducationsInfo;
 
   constructor(private userExperiencesService: UserExperiencesService) { }
 
   ngOnInit() {
-    this.userExperiencesInfo = this.userExperiencesService.getExperiencesInfo();
+    this.userEducationsInfo = this.userExperiencesService.getExperiencesInfo().educations;
   }
 
 }

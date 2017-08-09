@@ -43,6 +43,32 @@ export class UserExperiencesService {
         location: "[Location]",
         companyLink: "[Company's website]"
       }
+    ],
+    certificates: [
+      {
+        certificateTitle: "[Certificate title here]",
+        imageUrl: "https://images.sampletemplates.com/wp-content/uploads/2015/03/Free-Performance-Certificate-Template.jpg"
+      },
+      {
+        certificateTitle: "[Certificate title here]",
+        imageUrl: "https://images.sampletemplates.com/wp-content/uploads/2015/03/Free-Performance-Certificate-Template.jpg"
+      },
+      {
+        certificateTitle: "[Certificate title here]",
+        imageUrl: "https://images.sampletemplates.com/wp-content/uploads/2015/03/Free-Performance-Certificate-Template.jpg"
+      },
+      {
+        certificateTitle: "[Certificate title here]",
+        imageUrl: "https://images.sampletemplates.com/wp-content/uploads/2015/03/Free-Performance-Certificate-Template.jpg"
+      },
+      {
+        certificateTitle: "[Certificate title here]",
+        imageUrl: "https://images.sampletemplates.com/wp-content/uploads/2015/03/Free-Performance-Certificate-Template.jpg"
+      },
+      {
+        certificateTitle: "[Certificate title here]",
+        imageUrl: "https://images.sampletemplates.com/wp-content/uploads/2015/03/Free-Performance-Certificate-Template.jpg"
+      }
     ]
   };
 

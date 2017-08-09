@@ -1,0 +1,8 @@
+<h3>Certificates</h3>
+<div class="certificates">
+
+  <div class="certificate col col-sm-6 col-md-4" *ngFor="let certificate of userCertificatesInfo">
+    <img [src]="certificate.imageUrl">
+    <p class="certifica_title">{{ certificate.certificateTitle }}</p>
+  </div>
+</div>

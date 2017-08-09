@@ -1,8 +1,32 @@
-.row * {
+.link {
+  margin: 1%;
+}
+
+a {
+  text-decoration: none;
   color: #FFFFFF;
 }
 
-#contact a .icon {
+a .icon {
   float: left;
   margin-right: 20px;
+}
+
+.icon.icon-twitter {
+  background-position: 0px 0px;
+}
+
+.icon.icon-linkedin {
+  background-position: 0px -32px;
+}
+
+.icon.icon-email {
+  background-position: 0px -96px;
+}
+
+.icon {
+  display: inline-block;
+  background: url(../../../../assets/sm_icon_sprite.png) no-repeat;
+  height: 32px;
+  width: 32px;
 }

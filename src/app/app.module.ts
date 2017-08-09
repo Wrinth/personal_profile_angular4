@@ -24,6 +24,7 @@ import { ProjestItemComponent } from './body/projects/projest-list/projest-item/
 import { SocialAccountsComponent } from './body/contact/social-accounts/social-accounts.component';
 import {UserService} from "./user.service";
 import {PageService} from "./page.service";
+import { CertificatesComponent } from './body/experiences/certificates/certificates.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {PageService} from "./page.service";
     ToolsComponent,
     ProjestListComponent,
     ProjestItemComponent,
-    SocialAccountsComponent
+    SocialAccountsComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule
